@@ -39,6 +39,7 @@ header {
 .branding img {
     width: 60px;
     height: 60px;
+    margin: auto 10px;
 }
 
 .branding h1 {
@@ -47,6 +48,21 @@ header {
     margin: 10px 20px 10px 10px;
     text-align: center;
     font-size: 2em;
+}
+
+/* Photo du Youki 
+(version mobile - show 
+VS desktop no-show) */
+
+.mobilePict {
+    background-image: url('img/dog-food.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    box-shadow: 3px 5px 5px #260101;
 }
 
 /* Menu */
@@ -70,8 +86,68 @@ nav a {
     box-shadow: 3px 5px 5px #260101;
 }
 
-nav a:hover {
-    background-color: #260101;
-    color: #F2C894;
+/* Main */
+
+main {
+    width: 100%;
 }
 
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 60vw;
+    margin: auto;
+}
+
+main img {
+    width: 60vw;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 3px 5px 5px #260101;
+}
+
+figcaption {
+    background-color: #F2C894;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 5px 5px #260101;
+}
+
+
+article {
+    margin: 10px;
+    padding: 10px;
+    background-color: #F2C894;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px #260101;
+}
+
+h2, section, p {
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOVER VERSION DESKTOP
+    nav a:hover {
+    background-color: #260101;
+    color: #F2C894;
+} */
