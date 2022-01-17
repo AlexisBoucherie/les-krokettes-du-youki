@@ -12,6 +12,7 @@
 
 body {
     background-color: #A66249;
+    font-size: 20px;
 }
 
 header {
@@ -50,28 +51,16 @@ header {
 
 .branding h1 {
     font-family: 'Tillana', cursive;
-    line-height: 100%;
     color: #F2C894;
-    margin: 10px 20px 10px 10px;
     padding: 5px;
     text-align: center;
     font-size: 2em;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-/* Photo du Youki 
-(version mobile - show 
-VS desktop no-show) */
-
-/*.mobilePict {
-    background-image: url('img/dog-food.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 20px auto;
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    box-shadow: 3px 5px 5px #260101;
-}*/
+/* Photo du Youki */
 
 .mobilePictDiv {
     height: 40vh;
@@ -123,6 +112,7 @@ figure {
 
 main img {
     width: 60vw;
+    max-width: 550px;
     border-radius: 10px 10px 0 0;
     box-shadow: 3px 5px 5px #260101;
 }
@@ -181,7 +171,11 @@ footer {
 
 footer p, .backToMenu {
     color: #F2C894;
-    margin: 5px 0;
+    padding: 5px 0;
+}
+
+footer p {
+    font-size: 0.8em;
 }
 
 .backToMenu {
@@ -216,6 +210,7 @@ h3 {
 
 form {
     text-align: left;
+    max-width: 672px;
 }
 
 input[type=text], input[type=number], input[type=email], select {
@@ -226,9 +221,9 @@ input[type=text], input[type=number], input[type=email], select {
     border: 1px solid #260101;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
   
-  input[type=submit] {
+input[type=submit] {
     width: 100%;
     background-color: #260101;
     color: #F2C894;
@@ -237,22 +232,128 @@ input[type=text], input[type=number], input[type=email], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
 
-  .italic {
-      font-style: italic;
-  }
+.italic {
+    font-style: italic;
+    font-size: 1em;
+}
 
-  /* Contacts */
+/* >>> CONTACTS <<< */
 
-  .bold {
-      font-weight: bold;
-  }
+.bold {
+    font-weight: bold;
+}
 
+/* ****QUERIES**** */
 
-  
+@media screen and (min-width: 672px) {
 
+    /* Header */
 
+    header .wrapper {
+        display: flex;
+        height: 80vh;
+    }
+
+    nav {
+        position: initial;
+        width: 34%;
+        align-self: stretch;
+    }
+
+    nav a {
+        height: 25vh;
+        align-self: center;
+    }
+
+    .mobilePictDiv {
+        width: 66%;
+        height: 80vh;
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobilePict {
+        height: auto;
+        margin: auto;
+    }
+
+    /* Main */
+
+    main .wrapper {
+        justify-content: unset;
+        display: flex;
+    }
+
+    .about {
+        width: 66%;
+        align-self: stretch;
+    }
+
+    figure {
+        width: 34%;
+        margin: 10px;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    /* Footer */
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    /* >>>EVENTS<<< */
+
+    .navOther {
+        width: auto;
+    }
+
+    .navOther ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navOther a {
+        width: 30vw;
+    }
+
+    .linkHome, .linkContacts {
+        line-height: 4em;
+    }
+
+    .linkEvent {
+        line-height: 2em;
+    }
+
+    .form {
+        display: block;
+        text-align: center;
+    }
+
+    .form form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    /* >>> CONTACTS <<< */
+
+    .ftr {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
 
 
 
