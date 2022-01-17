@@ -24,8 +24,9 @@ header {
 /* Logo et titre */
 
 .branding {
-    margin: 10px;
-    background-color: #F2C894;
+    margin: 10px 10px 20px 10px;
+    padding: 5px;
+    background-color: #260101;
     border-radius: 10px;
     box-shadow: 3px 5px 5px #260101;
     display: flex;
@@ -41,13 +42,18 @@ header {
 .branding img {
     width: 60px;
     height: 60px;
+    background-color: #F2C894;
     margin: auto 10px;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
 .branding h1 {
     font-family: 'Tillana', cursive;
     line-height: 100%;
+    color: #F2C894;
     margin: 10px 20px 10px 10px;
+    padding: 5px;
     text-align: center;
     font-size: 2em;
 }
@@ -61,8 +67,8 @@ VS desktop no-show) */
     background-size: cover;
     background-position: center;
     margin: 20px auto;
-    width: 12em;
-    height: 12em;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     box-shadow: 3px 5px 5px #260101;
 }
@@ -119,7 +125,7 @@ figcaption {
 
 
 article {
-    margin: 10px;
+    margin: 20px 10px;
     padding: 10px;
     background-color: #F2C894;
     text-align: justify;
@@ -127,7 +133,7 @@ article {
     box-shadow: 3px 5px 5px #260101;
 }
 
-h2, section, p {
+h2, h3, section, p {
     padding-bottom: 5px;
 }
 
@@ -167,8 +173,61 @@ footer p, .backToMenu {
 
 /* >>> EVENTS <<< */
 
+.headerOther {
+    height: auto;
+}
 
+.navOther {
+    position: unset;
+}
 
+.event img {
+    width: 60vw;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: block;
+    align-self: center;
+}
+
+/* Formulaire */
+
+h3 {
+    font-size: 1.3em;
+    padding-top: 5px;
+}
+
+form {
+    text-align: left;
+}
+
+input[type=text], input[type=number], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #260101;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #260101;
+    color: #F2C894;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Contacts */
+
+  .bold {
+      font-weight: bold;
+  }
+
+  
 
 
 
@@ -179,4 +238,8 @@ footer p, .backToMenu {
     nav a:hover {
     background-color: #260101;
     color: #F2C894;
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+  }
 } */

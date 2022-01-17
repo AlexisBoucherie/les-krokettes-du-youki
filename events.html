@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="headerOther">
         <div class="branding" id="home">
             <a href="index.html"><img src="img/dog-bowl.png" alt="Logo du site"></span></a>
             <h1>Les Krokettes du Youki</h1>
         </div>
-        <nav>
+        <nav class="navOther">
             <ul>
                 <li><a href="index.html">Akkeuil</a></li>
                 <li><a href="#">Les Youkiyades</a></li>
@@ -25,10 +25,47 @@
         </nav>
     </header>
     <main>
+        <article class="event">
+            <h2>Les Youkiyades - Édition 2022</h2>
+            <img src="img/shopping-dog.jpg" alt="Chihuahua qui fait son shopping">
+            <section>
+                <h3>Les Youkiyades, k'est-que-c'est ?</h3>
+                <p>Chaque année nous organisons une rencontre avec nos généreux donateurs, venus de France et de Navarre. Lors de cette rencontre unique, vous pouvez échanger avec les maîtres du Youki et admirer la fameuse bête de plus près.</p>
+                <p>Lors des Youkiyades, venez partager un moment de convivialité autour d'un bon repas à la salle des fêtes de Youkopolis. Alors vous aussi, prenez part au festin et inscrivez-vous sans plus attendre ! D'autant plus qu'une partie des recettes de la rencontre seront reversés à la famille de Youki.</p>
+            </section>
+            <section>
+                <h3>Formulaire d'inscription</h3>
+                <form action="">
+                    <form action="/action.php">
+                        <label for="fname">Prénom</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
+                    
+                        <label for="lname">Nom *</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Votre nom..." required>
 
+                        <label for="nmbr">Nombre de participants *</label>
+                        <input type="number" id="nmbr" name="guestnumber" placeholder="Combien serez-vous ?" required>
+                    
+                        <label for="country">Pays</label>
+                        <select id="country" name="country">
+                          <option value="france">France</option>
+                          <option value="belgique">Belgique</option>
+                          <option value="suisse">Suisse</option>
+                          <option value="autre">Autre...</option>
+                        </select>
+
+                        <label for="email">Courriel *</label>
+                        <input type="email" id="email" size="40" name="email" placeholder="nom.prenom@exemple.fr" required>
+                      
+                        <input type="submit" value="Je m'inscris !">
+                </form>
+                <p>* champs obligatoires</p>
+            </section>
+        </article>
     </main>
     <footer>
-
+        <a href="#home" class="backToMenu">^ Retourner au menu ^</a>
+        <p>© 2022 - Alexis BOUCHERIE - Formation Graduate Développeur PHP/Symfony, promo YOCCOZ - Studi</p>
     </footer>
 </body>
 </html>
