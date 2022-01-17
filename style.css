@@ -129,13 +129,39 @@ h2, section, p {
     padding-bottom: 5px;
 }
 
+h2 {
+    font-size: 1.4em;
+}
+
 p {
     line-height: 1.2em;
 }
 
+article a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #700f0f;
+    text-decoration: underline;
+}
 
+/* Footer */
 
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #260101;
+    text-align: center;
+}
 
+footer p, .backToMenu {
+    color: #F2C894;
+    margin: 5px 0;
+}
+
+.backToMenu {
+    font-size: 1.1em;
+    text-decoration: underline;
+}
 
 
 
