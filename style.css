@@ -139,6 +139,11 @@ h2, h3, section, p {
 
 h2 {
     font-size: 1.4em;
+    text-align: left;
+}
+
+h2, h3 {
+    font-family: 'Tillana', cursive;
 }
 
 p {
