@@ -11,20 +11,26 @@
     <title>Les Krokettes du Youki | Contacts</title>
 </head>
 <body>
-    <header class="headerOther">
-        <div class="branding" id="home">
-            <a href="index.html"><img src="img/dog-bowl.png" alt="Logo du site"></span></a>
+    <!-- HEADER -->
+   
+    <header class="containerHeader">
+        <div class="badge" id="home">
+            <a class="logo" href="index.html"></a>
             <h1>Les Krokettes du Youki</h1>
         </div>
-        <nav class="navOther">
+        <div class="picture"><img src="img/dog-food.jpg" alt="Une gamelle de croquettes"></div>
+        <nav class="menunav">
             <ul>
-                <li class="liOther"><a class="linkHome" href="index.html">Akkueil</a></li>
-                <li class="liOther"><a class="linkEvent" href="events.html">Les Youkiyades</a></li>
-                <li class="liOther"><a class="linkContacts" href="#">Kontakts</a></li>
+                <li><a href="index.html">Akkueil</a></li>
+                <li><a href="events.html">Évènements</a></li>
+                <li><a class="active" href="contacts.html">Kontacts</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    
+    <!-- MAIN -->
+
+    <main class="containerContacts">
         <article>
             <h2>Komment nous joindre ?</h2>
             <p class="bold">Par téléphone :</p>
@@ -37,6 +43,9 @@
 
         </article>
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="ftr">
         <a href="#home" class="backToMenu">^ Retourner au menu ^</a>
         <p>© 2022 - Alexis BOUCHERIE - Formation Graduate Développeur PHP/Symfony, promo YOCCOZ - Studi</p>
